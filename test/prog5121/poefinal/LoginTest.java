@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package prog5121.part1;
+package prog5121.poefinal;
 
+import prog5121.poefinal.Login;
 import org.junit.Test; 
 import static org.junit.Assert.*;
 /**

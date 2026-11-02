@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package prog5121.part1;
+package prog5121.poefinal;
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -73,7 +73,7 @@ public class Main {
             scanner.nextLine(); // consume newline
 
             switch (menuChoice) {
-                case 1:
+                case 1 -> {
                     System.out.print("How many messages do you wish to enter? ");
                     int numMessages = scanner.nextInt();
                     scanner.nextLine();
@@ -116,19 +116,16 @@ public class Main {
                         System.out.println("\n--- Message Details ---");
                         System.out.println(msg.printMessages());
                     }
-                    break;
+                }
 
-                case 2:
-                    System.out.println("Coming Soon.");
-                    break;
+                case 2 -> System.out.println("Coming Soon.");
 
-                case 3:
+                case 3 -> {
                     System.out.println("Exiting QuickChat. Total messages processed: " + sentMessagesList.size());
                     running = false;
-                    break;
+                }
 
-                default:
-                    System.out.println("Invalid option. Please select 1, 2, or 3.");
+                default -> System.out.println("Invalid option. Please select 1, 2, or 3.");
             }
         }
         scanner.close();
